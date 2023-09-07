@@ -7,14 +7,100 @@
         <meta charset="utf-8">
         <meta name = "viewport" content  = "width = device-width, initial-scale = 1">
         <title>Shopping Cart</title>
-        <link rel="stylesheet" type="text/css" href="styleme.css">
+        <link rel="stylesheet" type="text/css" href="assignment3.css">
     </head>
 
     <body>
+        <div class = "logoImage">
+            <div class = "image1"><img src = "freeLogo.jpg" class="logo" alt="freeLogo" width="100" height="100"/></div>
+            <div class = header1><h1>Welcome, Sree!</h1></div>
+            <div><button class = "logoutButton">Logout</button></div>
+        </div>
 
-        <img src = "freeLogo.jpg" alt="freeLogo" width="100" height="100"/>
-        <h1 id = "header1">Welcome, Tina!</h1>
-        <button class = "logoutButton">Log Out</button>
+        <hr>
+
+        <div class = productTable>
+
+            <h1>Product List</h1> 
+
+            <table border = "2" cellpadding = "10">
+
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Actions</th>
+                </tr>
+
+                <tr>
+                    <th>Node.js</th>
+                    <th>9.99</th>
+                    <th>    8</th>
+                    <th><img src="cartLogo.JPG" alt = "cartLogo" height = 30 width = 30></th>
+                </tr>
+
+                <tr>
+                    <th>React</th>
+                    <th>19.99</th>
+                    <th>5</th>
+                    <th><img src="cartLogo.JPG" alt = "cartLogo" height = 30 width = 30></th>
+                </tr>
+
+                <tr>
+                    <th>Angular</th>
+                    <th>29.99</th>
+                    <th>13  </th>
+                    <th><img src="cartLogo.JPG" alt = "cartLogo" height = 30 width = 30></th>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+
+        <div class = "myCart">
+
+            <h1>Your Shopping Cart</h1>
+
+            <table border = "2" cellpadding = "10">
+
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Quantity</th>
+
+                </tr>
+
+                <tr>
+                    <th>Node.js</th>
+                    <th>9.99</th>
+                    <th>9.99</th>
+                    <th><input type="number" value="1" min="1" step="1"/></th>
+
+                </tr>
+
+                <tr>
+                    <th>Angular</th>
+                    <th>29.99</th>
+                    <th>290.99</th>
+                    <th><input type="number" value="1" min="1"/></th>
+                </tr>
+
+                <tr>
+                    <td colspan="2"></td>
+                    <td>Total: 300.98</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+
+        <div class = "orderDiv">
+            <button class = "orderButton">Place Order</button>
+        </div>
+
+
 
     </body>
 
